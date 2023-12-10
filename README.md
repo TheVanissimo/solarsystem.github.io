@@ -1,2 +1,2 @@
-# system.github.io
+# solarsystem.github.io
 Website

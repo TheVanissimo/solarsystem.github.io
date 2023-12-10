@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Солнечная система">
+
+    <link type="image/x-icon" rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="./public/css/app.css">
+
+    <title>Солнечная система</title>
+</head>
+<body>
+    <div class="bg" id="bg">
+        <canvas id="canvas"></canvas>
+    </div>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-wrapper">
+                    <a class="header-logotype" href="./index.html">
+                        <img class="header-image" src="./public/images/logo.png" alt="Солнечная система">
+                    </a>
+                    <ul class="header-menu">
+                        <li class="header-item">
+                            <a href="./index.html" class="header-link">Главная</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="./planets.html" class="header-link">Планеты</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="./small-bodies.html" class="header-link">Малые тела</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="./stars-galaxies.html" class="header-link">Звезды и галактики</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="./info.html" class="header-link header-active">Информация</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="section main">
+            <div class="container">
+                <h1 class="h1 animated bounceInRight">Общая информация</h1>
+                <div class="text animated fadeInLeft delay-1s">
+                    <ul>
+                        <li><a href="https://github.com/TheVanissimo">Разработчик</a></li>
+                        <li><a href="https://science.nasa.gov/solar-system/">Источники</a></li>
+                        <li><a href="#" target="_blank">Информация</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-copy">&copy; Морозов И.М. - ИКБО-02-22</div>
+            </div>
+        </footer>
+    </div>
+    <script src="./public/libs/gsap.min.js"></script>
+    <script defer type="module" src="./public/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Солнечная система">
+
+    <link type="image/x-icon" rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="./public/css/app.css">
+
+    <title>Солнечная система</title>
+</head>
+<body>
+    <div class="bg" id="bg">
+        <canvas id="canvas"></canvas>
+    </div>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-wrapper">
+                    <a class="header-logotype" href="./index.html">
+                        <img class="header-image" src="./public/images/logo.png" alt="Солнечная система">
+                    </a>
+                    <ul class="header-menu">
+                        <li class="header-item">
+                            <a href="./index.html" class="header-link">Главная</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="./planets.html" class="header-link header-active">Планеты</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="./small-bodies.html" class="header-link">Малые тела</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="./stars-galaxies.html" class="header-link">Звезды и галактики</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="./info.html" class="header-link">Информация</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="section transfer">
+            <div class="container">
+                <h1 class="h1 animated bounceInRight">Планеты солнечной системы</h1>
+                <div class="transfer-container animated fadeInLeft delay-1s">
+                    <div class="transfer-item">
+                        <img class="transfer-image" src="/system/public/images/planets/mercury.png" alt="Меркурий">
+                        <div class="transfer-info">
+                            <h2 class="transfer-name">Меркурий</h2>
+                            <div class="transfer-text">
+                                <p>Ближайшая к Солнцу планета, самая маленькая в системе, без
+                                    спутников. Его поверхность украшена ударными кратерами и лопастевидными уступами. У планеты разреженная атмосфера, состоящая из атомов, выбитых солнечным ветром. Большое железное ядро и тонкая кора.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transfer-item">
+                        <img class="transfer-image" src="./public/images/planets/venus.png" alt="Венера">
+                        <div class="transfer-info">
+                            <h2 class="transfer-name">Венера</h2>
+                            <div class="transfer-text">
+                                <p>Близкая к Земле по размеру и имеющая схожую структуру, обладает гораздо меньшим
+                                    количеством воды и гуще атмосферой. У неё нет спутников, и это самая горячая планета в нашей системе с поверхностной температурой более 400°C, что объясняется парниковым эффектом от её плотной углекислотной атмосферы.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transfer-item">
+                        <img class="transfer-image" src="./public/images/planets/earth.png" alt="Земля">
+                        <div class="transfer-info">
+                            <h2 class="transfer-name">Земля</h2>
+                            <div class="transfer-text">
+                                <p>Крупнейшая и самая плотная планета земной группы, уникальная среди них
+                                    благодаря наличию тектоники плит, гидросферы и свободного кислорода в атмосфере. У Земли есть один спутник - Луна, который является единственным большим спутником планет земной группы.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transfer-item">
+                        <img class="transfer-image" src="./public/images/planets/mars.png" alt="Марс">
+                        <div class="transfer-info">
+                            <h2 class="transfer-name">Марс</h2>
+                            <div class="transfer-text">
+                                <p>Планета, меньшая Земли и Венеры, с атмосферой, доминирующей углекислым газом. На
+                                    его поверхности расположены вулканы, в том числе Олимп, превосходящий любой земной. Поверхность обладает красным цветом за счет наличия оксида железа. Марс имеет два спутника - Фобос и Деймос.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transfer-item">
+                        <img class="transfer-image" src="./public/images/planets/saturn.png" alt="Сатурн">
+                        <div class="transfer-info">
+                            <h2 class="transfer-name">Сатурн</h2>
+                            <div class="transfer-text">
+                                <p>Известный своей системой колец, имеет атмосферу и магнитосферу, схожие с
+                                    Юпитером. Он меньше по объему и массе, но является наименее плотной планетой в Солнечной системе. У Сатурна 83 подтвержденных спутника, в том числе Титан и Энцелад.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transfer-item">
+                        <img class="transfer-image" src="./public/images/planets/uranus.png" alt="Уран">
+                        <div class="transfer-info">
+                            <h2 class="transfer-name">Уран</h2>
+                            <div class="transfer-text">
+                                <p>Третья по диаметру и четвертая по массе планета Солнечной системы. В отличие от
+                                    Сатурна и Юпитера, Уран и его «близнец» Нептун, известны своими ледяными недрами, отсутствием металлического водорода и наличием в атмосфере метана и других углеводородов, а также облаками из льда, твердого аммиака и водорода.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transfer-item">
+                        <img class="transfer-image" src="./public/images/planets/neptune.png" alt="Нептун">
+                        <div class="transfer-info">
+                            <h2 class="transfer-name">Нептун</h2>
+                            <div class="transfer-text">
+                                <p>Меньше Урана, обладает большей массой и плотностью, и излучает внутреннее тепло. У
+                                    планеты 14 спутников, среди которых большой и геологически активный Тритон с гейзерами жидкого азота.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-copy">&copy; Морозов И.М. - ИКБО-02-22</div>
+            </div>
+        </footer>
+    </div>
+    <script src="./public/libs/gsap.min.js"></script>
+    <script defer type="module" src="./public/js/app.js"></script>
+</body>
+</html>

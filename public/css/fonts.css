@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Caveat';
+    src: url('../fonts/Caveat/Caveat-Regular.eot');
+    src: url('../fonts/Caveat/Caveat-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Caveat/Caveat-Regular.woff2') format('woff2'), url('../fonts/Caveat/Caveat-Regular.woff') format('woff'), url('../fonts/Caveat/Caveat-Regular.ttf') format('truetype'), url('../fonts/Caveat/Caveat-Regular.svg#Caveat-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caveat';
+    src: url('../fonts/Caveat/Caveat-Bold.eot');
+    src: url('../fonts/Caveat/Caveat-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Caveat/Caveat-Bold.woff2') format('woff2'), url('../fonts/Caveat/Caveat-Bold.woff') format('woff'), url('../fonts/Caveat/Caveat-Bold.ttf') format('truetype'), url('../fonts/Caveat/Caveat-Bold.svg#Caveat-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caveat';
+    src: url('../fonts/Caveat/Caveat-Medium.eot');
+    src: url('../fonts/Caveat/Caveat-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Caveat/Caveat-Medium.woff2') format('woff2'), url('../fonts/Caveat/Caveat-Medium.woff') format('woff'), url('../fonts/Caveat/Caveat-Medium.ttf') format('truetype'), url('../fonts/Caveat/Caveat-Medium.svg#Caveat-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caveat';
+    src: url('../fonts/Caveat/Caveat-SemiBold.eot');
+    src: url('../fonts/Caveat/Caveat-SemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Caveat/Caveat-SemiBold.woff2') format('woff2'), url('../fonts/Caveat/Caveat-SemiBold.woff') format('woff'), url('../fonts/Caveat/Caveat-SemiBold.ttf') format('truetype'), url('../fonts/Caveat/Caveat-SemiBold.svg#Caveat-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}

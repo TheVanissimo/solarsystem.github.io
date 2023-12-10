@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Солнечная система">
+
+    <link type="image/x-icon" rel="shortcut icon" href="/system/favicon.ico">
+    <link rel="stylesheet" href="./public/css/app.css">
+
+    <title>Солнечная система</title>
+</head>
+<body>
+    <div class="bg" id="bg">
+        <canvas id="canvas"></canvas>
+    </div>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-wrapper">
+                    <a class="header-logotype" href="./index.html">
+                        <img class="header-image" src="./public/images/logo.png" alt="Солнечная система">
+                    </a>
+                    <ul class="header-menu">
+                        <li class="header-item">
+                            <a href="./index.html" class="header-link">Главная</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="./planets.html" class="header-link">Планеты</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="./small-bodies.html" class="header-link header-active">Малые тела</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="./stars-galaxies.html" class="header-link">Звезды и галактики</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="./info.html" class="header-link">Информация</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="section transfer">
+            <div class="container">
+                <h1 class="h1 animated bounceInRight">Малые тела солнечной системы</h1>
+                <div class="transfer-container animated fadeInLeft delay-1s">
+                    <div class="transfer-item">
+                        <img class="transfer-image" src="./public/images/bodies/comet.png" alt="Комета">
+                        <div class="transfer-info">
+                            <h2 class="transfer-name">Комета</h2>
+                            <div class="transfer-text">
+                                <p>Малое тело Солнечной системы, размером в несколько километров,
+                                    состоящее в основном из летучих веществ или льда. Она движется по орбите с большим эксцентриситетом, при приближении к Солнцу ее поверхность начинает испаряться, создавая видимое с Земли облако из газа и пыли.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transfer-item">
+                        <img class="transfer-image" src="./public/images/bodies/centaur.png" alt="Кентавр">
+                        <div class="transfer-info">
+                            <h2 class="transfer-name">Кентавр</h2>
+                            <div class="transfer-text">
+                                <p>Ледяной кометоподобный объект, чья орбита расположена между Юпитером и Нептуном.
+                                    Крупнейший из кентавров, Харикло, имеет диаметр около 250 км. Первый обнаруженный кентавр, Хирон, также классифицируется как комета из-за образования комы при приближении к Солнцу.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transfer-item">
+                        <img class="transfer-image" src="./public/images/bodies/pluto.png" alt="Плутон">
+                        <div class="transfer-info">
+                            <h2 class="transfer-name">Плутон</h2>
+                            <div class="transfer-text">
+                                <p>Карликовая планета и крупнейший объект пояса Койпера. После обнаружения в 1930
+                                    году был считан девятой планетой, но это изменилось в 2006 году. Плутон имеет орбиту с умеренным эксцентриситетом, иногда подходя к Солнцу ближе, чем Нептун.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transfer-item">
+                        <img class="transfer-image" src="./public/images/bodies/haumea.png" alt="Хаумеа">
+                        <div class="transfer-info">
+                            <h2 class="transfer-name">Хаумеа</h2>
+                            <div class="transfer-text">
+                                <p>Карликовая планета с вытянутой формой и периодом вращения около 4 часов. Она имеет
+                                    два спутника и принадлежит к семейству из минимум восьми транснептуновых объектов, сформировавшихся из ледяных осколков миллиарды лет назад после столкновения. Ее орбита имеет сильный наклон - 28 градусов.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transfer-item">
+                        <img class="transfer-image" src="./public/images/bodies/makemake.png" alt="Макемаке">
+                        <div class="transfer-info">
+                            <h2 class="transfer-name">Макемаке</h2>
+                            <div class="transfer-text">
+                                <p>Карликовая планета, изначально обозначавшаяся как 2005 FY9. Это вторая
+                                    по яркости планета в поясе Койпера после Плутона и крупнейший из известных
+                                    классических объектов этого пояса, не находящихся в подтвержденном резонансе с Нептуном. Орбита наклонена на 29 градусов. У Макемаке есть один спутник.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-copy">&copy; Морозов И.М. - ИКБО-02-22</div>
+            </div>
+        </footer>
+    </div>
+    <script src="./public/libs/gsap.min.js"></script>
+    <script defer type="module" src="./public/js/app.js"></script>
+</body>
+</html>

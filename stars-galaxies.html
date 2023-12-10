@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Солнечная система">
+
+    <link type="image/x-icon" rel="shortcut icon" href="/system/favicon.ico">
+    <link rel="stylesheet" href="./public/css/app.css">
+
+    <title>Солнечная система</title>
+</head>
+<body>
+    <div class="bg" id="bg">
+        <canvas id="canvas"></canvas>
+    </div>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-wrapper">
+                    <a class="header-logotype" href="./index.html">
+                        <img class="header-image" src="./public/images/logo.png" alt="Солнечная система">
+                    </a>
+                    <ul class="header-menu">
+                        <li class="header-item">
+                            <a href="./index.html" class="header-link">Главная</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="./planets.html" class="header-link">Планеты</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="./small-bodies.html" class="header-link">Малые тела</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="./stars-galaxies.html" class="header-link header-active">Звезды и галактики</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="./info.html" class="header-link">Информация</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="section transfer star">
+            <div class="container">
+                <h1 class="h1 animated bounceInRight">Звёзды и галактики солнечной системы</h1>
+                <div class="transfer-container animated fadeInLeft delay-1s">
+                    <div class="transfer-item">
+                        <img class="transfer-image" src="./public/images/stars/ball.png" alt="Шаровые звёздные скопления">
+                        <div class="transfer-info">
+                            <h2 class="transfer-name">Шаровые звёздные скопления</h2>
+                            <div class="transfer-text">
+                                <p>Это плотные, многочисленные группы звезд в форме шара с высокой концентрацией
+                                    звезд в центре. Они содержат от 10 тысяч до нескольких миллионов звезд и их
+                                    размеры составляют от 100 до 300 световых лет. Шаровые скопления обладают возрастом около 10-15 млрд лет.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transfer-item">
+                        <img class="transfer-image" src="./public/images/stars/scattered.png" alt="Рассеянные звёздные скопления">
+                        <div class="transfer-info">
+                            <h2 class="transfer-name">Рассеянные звёздные скопления</h2>
+                            <div class="transfer-text">
+                                <p>Менее плотны, чем шаровые, и обычно содержат от нескольких десятков до нескольких
+                                    тысяч звезд. Они имеют диаметр до 50 световых лет и обычно распадаются в течение
+                                    миллиарда лет из-за слабой гравитационной связи. Содержат в себе множество
+                                    массивных и ярких звезд.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transfer-item">
+                        <img class="transfer-image" src="./public/images/stars/associations.png"
+                             alt="Звёздные ассоциации">
+                        <div class="transfer-info">
+                            <h2 class="transfer-name">Звёздные ассоциации</h2>
+                            <div class="transfer-text">
+                                <p>Разреженные группы звезд с общей массой менее 1000 M⊙ и диаметром до 700 световых
+                                    лет. Из-за слабой гравитационной связи они обычно распадаются в течение 10 млн лет, что говорит о том, что они состоят из очень молодых звезд.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transfer-item">
+                        <img class="transfer-image" src="./public/images/stars/elliptical.png"
+                             alt="Эллиптическая галактика">
+                        <div class="transfer-info">
+                            <h2 class="transfer-name">Эллиптическая галактика</h2>
+                            <div class="transfer-text">
+                                <p>Галактика без выраженной внутренней структуры, которая имеет форму шара или
+                                    эллипсоида. Она практически не содержит газа и пыли и состоит в основном из старых звезд. Плоская составляющая в ней отсутствует.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transfer-item">
+                        <img class="transfer-image" src="./public/images/stars/lenticular.png"
+                             alt="Линзовидная галактика">
+                        <div class="transfer-info">
+                            <h2 class="transfer-name">Линзовидная галактика</h2>
+                            <div class="transfer-text">
+                                <p>Галактика внешне напоминает эллиптическую, но, несмотря на преобладание
+                                    сферической составляющей, она также обладает звездным диском.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transfer-item">
+                        <img class="transfer-image" src="./public/images/stars/spiral.png"
+                             alt="Спиральная галактика">
+                        <div class="transfer-info">
+                            <h2 class="transfer-name">Спиральная галактика</h2>
+                            <div class="transfer-text">
+                                <p>Галактика обладает как сферической, так и плоской составляющими, причем плоская
+                                    составляющая выражена сильнее, чем в линзовидных галактиках. В диске спиральной галактики присутствует спиральная структура.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transfer-item">
+                        <img class="transfer-image" src="./public/images/stars/wrong.png"
+                             alt="Неправильная галактика">
+                        <div class="transfer-info">
+                            <h2 class="transfer-name">Неправильная галактика</h2>
+                            <div class="transfer-text">
+                                <p>Галактика асимметричной формы с большим количеством газа и пыли. Она практически
+                                    не имеет сферической составляющей, большинство ее звезд - молодые и формируют плоскую подсистему.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-copy">&copy; Морозов И.М. - ИКБО-02-22</div>
+            </div>
+        </footer>
+    </div>
+    <script src="./public/libs/gsap.min.js"></script>
+    <script defer type="module" src="./public/js/app.js"></script>
+</body>
+</html>

@@ -194,3 +194,60 @@ p {
     border-radius: 999px;
     object-fit: cover
 }
+
+@media (max-width: 720px) {
+  footer {
+    text-align: left;
+    padding: 5%;
+  }
+  footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 840px) {
+  h3 {
+    white-space: normal;
+  }
+}
+@media (max-width: 768px) {
+  #bigcont img {
+    width: 70%;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+    padding: 0.7rem 0.9rem;
+  }
+
+  h2:hover {
+    padding: 0.8rem 0.9rem;
+  }
+
+  #menubutton {
+    width: 80px;
+  }
+
+  #menubutton:hover {
+    width: 90px !important;
+  }
+}
+@media (max-height: 675px) {
+  aside img {
+    display: none;
+  }
+
+  aside img:last-child {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  nav {
+    display: none;
+  }

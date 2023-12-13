@@ -59,7 +59,7 @@ p {
 .container {
     position: relative;
     display: block;
-    width: 1250px;
+    width: 1260px;
     margin: 0 auto
 }
 
@@ -122,9 +122,9 @@ p {
     display: grid
 }
 
-.header .header-wrapper .header-menu .header-link {
-    font-size: 33px;
-    font-weight: 500
+.header .header-wrapper .header-menu .header-item .header-link {
+    font-weight: 500;
+    white-space: nowrap
 }
 
 .header .header-wrapper .header-menu .header-link.header-active {

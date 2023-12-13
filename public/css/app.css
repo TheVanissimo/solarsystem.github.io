@@ -127,7 +127,7 @@ p {
     white-space: nowrap
 }
 
-.header .header-wrapper .header-menu .header-link.header-active {
+.header .header-wrapper .header-menu .header-item .header-link.header-active {
     color: var(--color-pink)
 }
 

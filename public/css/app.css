@@ -195,57 +195,109 @@ p {
     object-fit: cover
 }
 
-@media (max-width: 720px) {
-  footer {
-    text-align: left;
-    padding: 5%;
-  }
-  footer .row ul li {
-    display: block;
-    margin: 10px 0px;
-    text-align: left;
-  }
+@media only screen and (max-width: 1300px) {
+    .container {
+        width: 100%
+    }
+
+    .wrapper {
+        padding: 20px
+    }
+
+    .header .header-wrapper .header-menu .header-link {
+        font-size: 25px
+    }
+
+    body {
+        font-size: 25px
+    }
+
+    .h1 {
+        font-size: 50px
+    }
 }
 
-@media (max-width: 840px) {
-  h3 {
-    white-space: normal;
-  }
+@media only screen and (max-width: 950px) {
+    .header .header-wrapper .header-menu {
+        grid-gap: 25px
+    }
 }
-@media (max-width: 768px) {
-  #bigcont img {
-    width: 70%;
-  }
 
-  h3 {
-    font-size: 1.1rem;
-  }
+@media only screen and (max-width: 800px) {
+    .header .header-wrapper {
+        grid-auto-flow: row;
+        grid-gap: 20px;
+        justify-content: center
+    }
 
-  h2 {
-    font-size: 1.7rem;
-    padding: 0.7rem 0.9rem;
-  }
+    .header .header-wrapper .header-logotype {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto
+    }
 
-  h2:hover {
-    padding: 0.8rem 0.9rem;
-  }
+    .header .header-wrapper .header-menu {
+        grid-row-gap: 15px
+    }
 
-  #menubutton {
-    width: 80px;
-  }
+    .section.main {
+        padding: 0
+    }
 
-  #menubutton:hover {
-    width: 90px !important;
-  }
+    .transfer .transfer-container .transfer-item {
+        grid-template: auto 1fr / auto
+    }
+
+    .transfer .transfer-container .transfer-item .transfer-image {
+        width: 250px;
+        height: 250px
+    }
+
+    .transfer .transfer-container .transfer-item:nth-child(even) .transfer-image {
+        order: 1
+    }
+
+    .transfer .transfer-container .transfer-item:nth-child(even) .transfer-info {
+        order: 2
+    }
+
+    .transfer .transfer-container {
+        grid-gap: 60px
+    }
+
+    .transfer .transfer-container .transfer-item:not(:first-child):after {
+        top: -30px
+    }
 }
-@media (max-height: 675px) {
-  aside img {
-    display: none;
-  }
 
-  aside img:last-child {
-    display: block;
-  }
+@media only screen and (max-width: 700px) {
+    .footer .footer-copy {
+        text-align: center
+    }
+
+    .header .header-wrapper {
+        justify-content: normal
+    }
+
+    .header .header-wrapper .header-menu {
+        width: 100%;
+        grid-auto-flow: row;
+        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr))
+    }
+
+    .h1 {
+        font-size: 40px
+    }
+
+    .transfer .transfer-container .transfer-item .transfer-image {
+        margin: 0 auto
+    }
+}
+
+@media only screen and (max-width: 405px) {
+    .header .header-wrapper .header-menu .header-item .header-link {
+        text-align: center
+    }
 }
 @media (max-width: 600px) {
   nav {

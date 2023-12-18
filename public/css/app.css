@@ -5,7 +5,8 @@
     --font-family: 'Caveat', sans-serif;
     --color-white: #FFF;
     --color-blue: #1E90FF;
-    --color-pink: #CD29F9
+    --color-pink: #CD29F9;
+    --color-white-opacity: rgba(255, 255, 255, .25)
 }
 
 body {
@@ -195,6 +196,121 @@ p {
     object-fit: cover
 }
 
+.transfer .transfer-container.transfer-card {
+    grid-gap: 0;
+    grid-template-columns: 1fr 1fr
+}
+
+.transfer .transfer-container.transfer-card .transfer-item {
+    grid-auto-flow: initial;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    padding: 50px 25px
+}
+
+.transfer .transfer-container.transfer-card .transfer-item:nth-child(even) .transfer-image {
+    order: 1
+}
+
+.transfer .transfer-container.transfer-card .transfer-item:nth-child(even) .transfer-info {
+    order: 2
+}
+
+.transfer .transfer-container.transfer-card .transfer-item:hover {
+    background: var(--color-white-opacity)
+}
+
+.transfer .transfer-container.transfer-card .transfer-item:after {
+    height: 0
+}
+
+.transfer .transfer-container.transfer-card .transfer-item:not(:nth-child(-n+2)):after {
+    top: 0;
+    height: 1px
+}
+
+.transfer .transfer-container.transfer-card .transfer-item:hover .transfer-image {
+    animation: fadeInDown;
+    animation-duration: 1s
+}
+
+.transfer .transfer-container.transfer-card .transfer-item:hover .transfer-info .transfer-name {
+    animation: flash;
+    animation-duration: 1s
+}
+
+.transfer .transfer-container.transfer-card .transfer-item:hover .transfer-info .transfer-text {
+    animation: zoomIn;
+    animation-duration: 1s
+}
+
+.transfer .transfer-container.transfer-full {
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr
+}
+
+.transfer .transfer-container.transfer-full .transfer-item:not(.transfer-show) .transfer-info {
+    display: none;
+    transition: all .3s ease
+}
+
+.transfer .transfer-container.transfer-full .transfer-item:not(.transfer-show) {
+    grid-gap: 0
+}
+
+.transfer .transfer-container.transfer-full .transfer-item {
+    cursor: pointer
+}
+
+.transfer .transfer-container.transfer-full .transfer-item:after {
+    height: 0
+}
+
+.transfer .transfer-container.transfer-full .transfer-item:nth-child(even) .transfer-image {
+    order: 1
+}
+
+.transfer .transfer-container.transfer-full .transfer-item:nth-child(even) .transfer-info {
+    order: 2
+}
+
+.transfer .transfer-container.transfer-card .transfer-item.transfer-show .transfer-image {
+    animation: fadeInDown;
+    animation-duration: 1s
+}
+
+.transfer .transfer-container.transfer-full .transfer-item.transfer-show {
+    grid-column: 1 / span 3
+}
+
+.transfer .transfer-container.transfer-full .transfer-item.transfer-show .transfer-info {
+    display: grid
+}
+
+.info .info-container {
+    display: grid;
+    grid-gap: 30px
+}
+
+.info .info-container .info-button {
+    display: grid;
+    background: url('../images/background-button.png') no-repeat center;
+    background-size: contain;
+    width: 196px;
+    height: 60px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    padding: 0 0 8px;
+    transition: all .3s ease
+}
+
+.info .info-container .info-button:hover {
+    transform: scale(1.1);
+    color: var(--color-white)
+}
+
 @media only screen and (max-width: 1300px) {
     .container {
         width: 100%
@@ -214,6 +330,16 @@ p {
 
     .h1 {
         font-size: 50px
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .transfer .transfer-container.transfer-full {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .transfer .transfer-container.transfer-full .transfer-item.transfer-show {
+        grid-column: 1 / span 2
     }
 }
 
@@ -268,6 +394,14 @@ p {
     .transfer .transfer-container .transfer-item:not(:first-child):after {
         top: -30px
     }
+
+    .transfer .transfer-container.transfer-card {
+        grid-template-columns: 1fr
+    }
+
+    .transfer .transfer-container.transfer-card .transfer-item {
+        padding: 30px 25px
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -292,14 +426,22 @@ p {
     .transfer .transfer-container .transfer-item .transfer-image {
         margin: 0 auto
     }
+
+    .transfer .transfer-container.transfer-full {
+        grid-template-columns: 1fr
+    }
+
+    .transfer .transfer-container.transfer-full .transfer-item.transfer-show {
+        grid-column: 1
+    }
 }
 
 @media only screen and (max-width: 405px) {
     .header .header-wrapper .header-menu .header-item .header-link {
         text-align: center
     }
+
+    .transfer .transfer-container.transfer-card .transfer-item {
+        padding: 30px 10px
+    }
 }
-@media (max-width: 600px) {
-  nav {
-    display: none;
-  }
